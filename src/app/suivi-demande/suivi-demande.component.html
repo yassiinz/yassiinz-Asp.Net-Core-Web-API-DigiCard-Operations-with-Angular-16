@@ -1,0 +1,44 @@
+<br>
+  <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Suivi demande</h2>
+					<app-validation-card-request></app-validation-card-request>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-bordered table-dark table-hover">
+						  <thead>
+						    <tr>
+                  <th>N° demande</th>
+                  <th>Nom de la société</th>
+                  <th>Commentaire</th>
+                  <th>Nombre de carte</th>
+                  <th>Status</th>
+                  <th></th>
+						    </tr>
+						  </thead>
+						  <tbody *ngFor="let cr of service.list">
+						    <tr *ngFor="let crr of servicee.list">
+                  <td>{{crr.id}}</td>
+                  <td>{{cr.companyName}}</td>
+                  <td>{{crr.comment}}</td>
+                  <td>{{crr.numberOfCards}}</td>
+                  <td>{{crr.status}}</td>
+                  <td >
+                    <div class="section button-group">
+                    <button class="validate-button">VALIDER</button>
+                    <button class="reject-button" (click)="onDelete(crr.id)">REJETER</button>
+                    </div>
+                  </td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

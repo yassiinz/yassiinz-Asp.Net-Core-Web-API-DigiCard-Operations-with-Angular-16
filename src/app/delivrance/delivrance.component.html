@@ -1,0 +1,43 @@
+<br><br><br><br>
+<div class="checkbox-container">
+    <div class="checkbox-wrapper-46">
+      <input type="checkbox" id="cbx-46" class="inp-cbx" (change)="toggleForm('form1', $event)" />
+      <label for="cbx-46" class="cbx">
+        <span>
+          <svg viewBox="0 0 12 10" height="10px" width="12px">
+            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+          </svg>
+        </span>
+        <span>Unitaire</span>
+      </label>
+    </div>
+    <div class="checkbox-wrapper-4">
+      <input type="checkbox" id="cbx-4" class="inp-cbx" (change)="toggleForm('form2', $event)" />
+      <label for="cbx-4" class="cbx">
+        <span>
+          <svg viewBox="0 0 12 10" height="10px" width="12px">
+            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+          </svg>
+        </span>
+        <span>En masse</span>
+      </label>
+    </div>
+  </div>
+  <br><br>
+  <div class="checkbox-container">
+  <div *ngIf="showForm1" class="form-container">
+    <form>
+      <h3>Form 1</h3>
+      <!-- Add your form fields here -->
+      <input type="text" placeholder="Field 1" />
+    </form>
+  </div>
+  
+  <div *ngIf="showForm2" class="form-container">
+    <form>
+      <h3>Form 2</h3>
+      <!-- Add your form fields here -->
+      <input type="text" placeholder="Field 2" />
+    </form>
+  </div>
+</div>

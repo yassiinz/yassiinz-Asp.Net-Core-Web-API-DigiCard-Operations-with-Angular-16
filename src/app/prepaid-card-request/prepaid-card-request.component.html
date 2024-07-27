@@ -1,0 +1,57 @@
+<br><br><br><br>
+<div class="stylish-text"><span class="stylish-text">demande de Cartes Prépayées</span></div><br>
+<div class="container">
+<div class="row form-group">
+  <div class="col-md-6 mb-3 mb-md-0">
+    <div class="form-container"  *ngFor="let cr of service.list" >
+      <h2 class="h2">Données du demandeur</h2>
+      <form class="form">
+        <div class="form-group">
+          <label>Nom de la société :</label>
+          <div class="fw-bold">{{cr.companyName}}</div>
+        </div>
+        <div class="form-group">
+          <label for="companyName" >Libellé du compte :</label>
+          <div class="fw-bold">{{cr.accountLabel}}</div>
+        </div>
+        <div class="form-group">
+          <label for="companyName" >Numéro de compte :</label>
+          <div class="fw-bold">{{cr.accountNumber}}</div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <div class="col-md-6">
+    <div class="form-container">
+      <form class="form" #form="ngForm" (submit)="onSubmit(form)" [class.submitted]="servicee.formSubmitted" novalidate autocomplete="off" >
+        <input type="hidden" name="id" [value]="servicee.formData.id">
+        <div class="form-group">
+          <label for="email">Nombre de cartes demandées</label>
+          <input type="number" class="form-control form-control-lg" #numberOfCards="ngModel"
+          name="numberOfCards" [(ngModel)]="servicee.formData.numberOfCards" required >
+        </div>
+        <div class="form-group">
+          <label for="textarea">Commentaire ... ?</label>
+          <textarea id="comment" type="number" class="form-control form-control-lg" #comment="ngModel"
+      name="comment" [(ngModel)]="servicee.formData.comment"></textarea>
+        </div>
+        <div class="form-group">
+          <label>CGU</label>
+          <label  class="cont" for="cgu">
+          <input id="cgu" type="checkbox"  #cgu="ngModel"
+          name="cgu" [(ngModel)]="servicee.formData.cgu">
+          <svg viewBox="0 0 64 64" height="2em" width="2em">
+            <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+          </svg>
+        </label>
+          <p>(Doit être lu et approuvé pour passer à l’enregistrement)</p>
+        </div>
+        <button class="form-submit-btn" type="submit">ENREGISTRER</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
