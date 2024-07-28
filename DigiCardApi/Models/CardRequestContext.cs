@@ -8,5 +8,6 @@ namespace CardAPI.Models
         }
         public DbSet<CardRequest> CardRequests { get; set; }
         public DbSet<Companies> Companies {  get; set; }
+        public DbSet<Delivrance> Delivrance { get; set; }
     }
 }

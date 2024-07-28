@@ -4,6 +4,7 @@ using CardAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CardAPI.Migrations
 {
     [DbContext(typeof(CardRequestContext))]
-    partial class CardRequestContextModelSnapshot : ModelSnapshot
+    [Migration("20240727140111_fourth-mig")]
+    partial class fourthmig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -82,8 +85,8 @@ namespace CardAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateDeNaissance")
-                        .HasColumnType("DateTime2");
+                    b.Property<DateOnly>("DateDeNaissance")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -99,8 +102,8 @@ namespace CardAPI.Migrations
                     b.Property<int>("NumCin")
                         .HasColumnType("int");
 
-                    b.Property<long>("NumDeCarte")
-                        .HasColumnType("bigint");
+                    b.Property<int>("NumDeCarte")
+                        .HasColumnType("int");
 
                     b.Property<string>("Prenom")
                         .IsRequired()
