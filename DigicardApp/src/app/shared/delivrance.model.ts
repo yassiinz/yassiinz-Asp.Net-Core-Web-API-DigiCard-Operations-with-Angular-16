@@ -4,7 +4,7 @@ export class Delivrance {
     prenom:string = ""
     numDeCarte:number = 0
     numCin:number = 0
-    dateDeNaissance:Date = new Date('DD-MM-YYYY')
+    dateDeNaissance:Date = new Date('')
     gsm:number = 0
-    email:string = "user@example.com"
+    email:string = ""
 }

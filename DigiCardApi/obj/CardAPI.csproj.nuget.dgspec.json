@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yassine\\source\\repos\\CardAPI\\CardAPI.csproj": {}
+    "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yassine\\source\\repos\\CardAPI\\CardAPI.csproj": {
+    "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yassine\\source\\repos\\CardAPI\\CardAPI.csproj",
+        "projectUniqueName": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj",
         "projectName": "CardAPI",
-        "projectPath": "C:\\Users\\yassine\\source\\repos\\CardAPI\\CardAPI.csproj",
+        "projectPath": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj",
         "packagesPath": "C:\\Users\\yassine\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yassine\\source\\repos\\CardAPI\\obj\\",
+        "outputPath": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yassine\\AppData\\Roaming\\NuGet\\NuGet.Config",

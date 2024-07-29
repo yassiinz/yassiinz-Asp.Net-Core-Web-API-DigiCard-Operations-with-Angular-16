@@ -3,6 +3,7 @@ import { HttpClient } from "@angular/common/http"
 import { environment } from 'src/environments/environment';
 import { Delivrance } from './delivrance.model';
 import { NgForm } from "@angular/forms";
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -38,5 +39,8 @@ export class DelivranceService {
     form.form.reset()
     this.formData = new Delivrance()
     this.formSubmitted = false
+  }
+  addDelivrance(delivrances: Delivrance[]): Observable<Delivrance[]> {
+    return this.http.post<Delivrance[]>(this.url, delivrances);
   }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "91V5UoYrGec=",
+  "dgSpecHash": "IEUE3E0MApo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\yassine\\source\\repos\\CardAPI\\CardAPI.csproj",
+  "projectFilePath": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yassine\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\yassine\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
