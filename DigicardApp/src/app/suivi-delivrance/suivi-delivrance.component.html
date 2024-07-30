@@ -1,0 +1,41 @@
+<br>
+    <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+                    <div class="stylish-text"><span class="stylish-text">Suivi Delivrance</span></div>
+					<app-validation-card-request></app-validation-card-request><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table table-bordered table-dark table-hover">
+						  <thead>
+						    <tr>
+                  <th>Nom</th>
+                  <th>Prenom</th>
+                  <th>Numero de Carte</th>
+                  <th>Numero cin</th>
+                  <th>Date de Naissance</th>
+                  <th>GSM</th>
+                  <th>Email</th>
+					       </tr>
+						  </thead>
+						  <tbody *ngFor="let dv of service.list" (click)="populateForm(dv)">
+                            <tr>
+                            <td>{{dv.nom}}</td>
+                            <td>{{dv.prenom}}</td>
+                            <td>{{dv.numDeCarte}}</td>
+                            <td>{{dv.numCin}}</td>
+                            <td>{{dv.dateDeNaissance}}</td>
+                            <td>{{dv.gsm}}</td>
+                            <td>{{dv.email}}</td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

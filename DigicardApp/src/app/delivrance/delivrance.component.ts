@@ -3,6 +3,7 @@ import { NgForm } from "@angular/forms";
 import { Delivrance } from 'src/app/shared/delivrance.model';
 import { Router } from '@angular/router';
 import { DelivranceService } from '../shared/delivrance.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-delivrance',
@@ -23,7 +24,7 @@ export class DelivranceComponent implements OnInit{
       if (isChecked) this.showForm1 = false;
     }
   }
-  constructor(public service : DelivranceService){}
+  constructor(public service : DelivranceService, private toastr: ToastrService){}
   ngOnInit(): void {
     this.service.refreshList();
   }
@@ -44,6 +45,7 @@ export class DelivranceComponent implements OnInit{
         next: res => {
           this.service.list = res as Delivrance[]
           this.service.resetForm(form)
+          this.toastr.success('Inserted successfully', 'Payment Detail Register')
         },
         error: err => { console.log(err) }
       })
@@ -54,6 +56,7 @@ export class DelivranceComponent implements OnInit{
         next: res => {
           this.service.list = res as Delivrance[]
           this.service.resetForm(form)
+          this.toastr.info('Updated successfully', 'Payment Detail Register')
         },
         error: err => { console.log(err) }
       })

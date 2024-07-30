@@ -11,6 +11,12 @@ import { FormsModule } from '@angular/forms';
 import { SuiviDemandeComponent } from './suivi-demande/suivi-demande.component';
 import { HomeComponent } from './home/home.component';
 import { DelivranceComponent } from './delivrance/delivrance.component';
+import { SuiviDelivranceComponent } from './suivi-delivrance/suivi-delivrance.component';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,8 +24,8 @@ const routes: Routes = [
   { path: 'validation-card-request', component: ValidationCardRequestComponent },
   { path: 'suivi-demande', component : SuiviDemandeComponent },
   { path: 'home', component : HomeComponent },
-  { path: 'delivrance', component : DelivranceComponent }
-
+  { path: 'delivrance', component : DelivranceComponent },
+  { path: 'suivi-delivrance', component : SuiviDelivranceComponent }
 ];
 
 @NgModule({
@@ -30,14 +36,18 @@ const routes: Routes = [
     SuiviDemandeComponent,
     HomeComponent,
     DelivranceComponent,
+    SuiviDelivranceComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    FormsModule
-  ],
+    FormsModule,
+    CommonModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

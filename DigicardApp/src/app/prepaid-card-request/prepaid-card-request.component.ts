@@ -4,6 +4,7 @@ import { CardRequestService } from 'src/app/shared/card-request.service';
 import { NgForm } from "@angular/forms";
 import { CardRequest } from 'src/app/shared/card-request.model';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-prepaid-card-request',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./prepaid-card-request.component.css']
 })
 export class PrepaidCardRequestComponent implements OnInit{
-  constructor(public service : CompaniesService,private router: Router,public servicee : CardRequestService){}
+  constructor(public service : CompaniesService,private toastr: ToastrService,public servicee : CardRequestService){}
   ngOnInit(): void {
     this.service.refreshList();
   }
@@ -32,6 +33,7 @@ export class PrepaidCardRequestComponent implements OnInit{
         next: res => {
           this.servicee.list = res as CardRequest[]
           this.servicee.resetForm(form)
+          this.toastr.success('Inserted successfully', 'Payment Detail Register')
         },
         error: err => { console.log(err) }
       })
@@ -42,6 +44,7 @@ export class PrepaidCardRequestComponent implements OnInit{
         next: res => {
           this.servicee.list = res as CardRequest[]
           this.servicee.resetForm(form)
+          this.toastr.info('Updated successfully', 'Payment Detail Register')
         },
         error: err => { console.log(err) }
       })
