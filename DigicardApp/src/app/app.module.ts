@@ -16,6 +16,10 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { ValidationDemandeComponent } from './validation-demande/validation-demande.component';
+import { ValidationDelivranceComponent } from './validation-delivrance/validation-delivrance.component';
+import { CreditCardFormatPipe } from './credit-card-format.pipe';
+
 
 
 const routes: Routes = [
@@ -25,7 +29,9 @@ const routes: Routes = [
   { path: 'suivi-demande', component : SuiviDemandeComponent },
   { path: 'home', component : HomeComponent },
   { path: 'delivrance', component : DelivranceComponent },
-  { path: 'suivi-delivrance', component : SuiviDelivranceComponent }
+  { path: 'suivi-delivrance', component : SuiviDelivranceComponent },
+  { path: 'validation-demande', component : ValidationDemandeComponent },
+  { path: 'validation-delivrance', component : ValidationDelivranceComponent }
 ];
 
 @NgModule({
@@ -37,6 +43,9 @@ const routes: Routes = [
     HomeComponent,
     DelivranceComponent,
     SuiviDelivranceComponent,
+    ValidationDemandeComponent,
+    ValidationDelivranceComponent,
+    CreditCardFormatPipe,
   ],
   imports: [
     BrowserModule,

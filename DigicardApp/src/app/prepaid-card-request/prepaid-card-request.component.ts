@@ -12,7 +12,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./prepaid-card-request.component.css']
 })
 export class PrepaidCardRequestComponent implements OnInit{
-  constructor(public service : CompaniesService,private toastr: ToastrService,public servicee : CardRequestService){}
+  constructor(public service : CompaniesService,private toastr: ToastrService,public servicee : CardRequestService,private router: Router){}
   ngOnInit(): void {
     this.service.refreshList();
   }
@@ -25,7 +25,6 @@ export class PrepaidCardRequestComponent implements OnInit{
       else
         this.updateRecord(form)
     }
-    /*this.router.navigate(['/validation-card-request']);*/
   }
   insertRecord(form: NgForm) {
     this.servicee.postPaymentDetail()
@@ -33,7 +32,8 @@ export class PrepaidCardRequestComponent implements OnInit{
         next: res => {
           this.servicee.list = res as CardRequest[]
           this.servicee.resetForm(form)
-          this.toastr.success('Inserted successfully', 'Payment Detail Register')
+          this.toastr.success('Inserted successfully', 'Demande Carte')
+          this.router.navigate(['/suivi-demande'])
         },
         error: err => { console.log(err) }
       })
@@ -44,7 +44,7 @@ export class PrepaidCardRequestComponent implements OnInit{
         next: res => {
           this.servicee.list = res as CardRequest[]
           this.servicee.resetForm(form)
-          this.toastr.info('Updated successfully', 'Payment Detail Register')
+          this.toastr.info('Updated successfully', 'Demande Carte')
         },
         error: err => { console.log(err) }
       })

@@ -7,4 +7,5 @@ export class Delivrance {
     dateDeNaissance:Date = new Date('')
     gsm:number = 0
     email:string = ""
+    status:string = "En Attente"
 }

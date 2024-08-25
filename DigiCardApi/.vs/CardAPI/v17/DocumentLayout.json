@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:models\\delivrance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\controllers\\delivrancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:controllers\\delivrancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\migrations\\20240805193610_lost_count.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:migrations\\20240805193610_lost_count.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\cardapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:cardapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\models\\cardrequestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:models\\cardrequestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|c:\\users\\yassine\\onedrive\\documents\\github\\yassiinz-asp.net-core-web-api-digicard-operations-with-angular-16\\digicardapi\\models\\applicationusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB87DDE2-3FC1-4B98-A585-3FB136476784}|CardAPI.csproj|solutionrelative:models\\applicationusermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,34 +48,70 @@
               "RelativeDocumentMoniker": "Models\\Delivrance.cs",
               "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\Delivrance.cs",
               "RelativeToolTip": "Models\\Delivrance.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBEAAAATAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T21:54:59.839Z",
+              "WhenOpened": "2024-08-14T13:57:47.149Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DelivrancesController.cs",
-              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Controllers\\DelivrancesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DelivrancesController.cs",
-              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Controllers\\DelivrancesController.cs",
-              "RelativeToolTip": "Controllers\\DelivrancesController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Title": "20240805193610_lost_count.cs",
+              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Migrations\\20240805193610_lost_count.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240805193610_lost_count.cs",
+              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Migrations\\20240805193610_lost_count.cs",
+              "RelativeToolTip": "Migrations\\20240805193610_lost_count.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T21:53:56.945Z"
+              "WhenOpened": "2024-08-05T19:36:10.92Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CardAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj",
-              "RelativeDocumentMoniker": "CardAPI.csproj",
-              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\CardAPI.csproj",
-              "RelativeToolTip": "CardAPI.csproj",
+              "Title": "CardRequestContext.cs",
+              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\CardRequestContext.cs",
+              "RelativeDocumentMoniker": "Models\\CardRequestContext.cs",
+              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\CardRequestContext.cs",
+              "RelativeToolTip": "Models\\CardRequestContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T19:23:36.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUserController.cs",
+              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Controllers\\ApplicationUserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ApplicationUserController.cs",
+              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Controllers\\ApplicationUserController.cs",
+              "RelativeToolTip": "Controllers\\ApplicationUserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T19:32:11.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T19:28:35.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationUserModel.cs",
+              "DocumentMoniker": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\ApplicationUserModel.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUserModel.cs",
+              "ToolTip": "C:\\Users\\yassine\\OneDrive\\Documents\\GitHub\\yassiinz-Asp.Net-Core-Web-API-DigiCard-Operations-with-Angular-16\\DigiCardApi\\Models\\ApplicationUserModel.cs",
+              "RelativeToolTip": "Models\\ApplicationUserModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-28T10:00:17.625Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T19:28:11.16Z"
             }
           ]
         }

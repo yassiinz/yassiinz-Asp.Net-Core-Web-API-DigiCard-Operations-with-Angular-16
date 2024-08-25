@@ -41,4 +41,7 @@ export class CardRequestService {
     this.formData = new CardRequest()
     this.formSubmitted = false
   }
+  updateStatus(request: CardRequest) {
+    return this.http.put(this.url + '/' + request.id, request);
+  }
 }

@@ -24,8 +24,7 @@
             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"> 
               <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
               <li><a routerLink="/prepaid-card-request" routerLinkActive="active">Demande Carte</a></li>
-              <li><a routerLink="/suivi-demande" routerLinkActive="active">suivi demande</a></li>
-              <li><a routerLink="/delivrance" routerLinkActive="active">Delivrance</a></li>
+              <li><a routerLink="/suivi-demande" routerLinkActive="active">suivi demande</a></li> 
               <li><a routerLink="/suivi-delivrance" routerLinkActive="active">suivi delivrance</a></li>
               <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
               <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
@@ -41,8 +40,9 @@
     </div>
     
   </header>
-     
+  
+  <router-outlet></router-outlet>
 
 </div> <!-- .site-wrap -->
 
-<router-outlet></router-outlet>
+

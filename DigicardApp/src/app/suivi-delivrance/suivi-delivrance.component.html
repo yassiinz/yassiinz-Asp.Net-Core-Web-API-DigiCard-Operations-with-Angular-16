@@ -1,10 +1,10 @@
 <br>
     <section class="ftco-section">
+		<div class="stylish-text"><span class="stylish-text">Suivi Delivrance</span></div>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-                    <div class="stylish-text"><span class="stylish-text">Suivi Delivrance</span></div>
-					<app-validation-card-request></app-validation-card-request><br>
+					<app-validation-card-request></app-validation-card-request><br><br><br>
 				</div>
 			</div>
 			<div class="row">
@@ -20,6 +20,8 @@
                   <th>Date de Naissance</th>
                   <th>GSM</th>
                   <th>Email</th>
+				  <th>Status</th>
+				  <th></th>
 					       </tr>
 						  </thead>
 						  <tbody *ngFor="let dv of service.list" (click)="populateForm(dv)">
@@ -31,6 +33,8 @@
                             <td>{{dv.dateDeNaissance}}</td>
                             <td>{{dv.gsm}}</td>
                             <td>{{dv.email}}</td>
+							<td>{{dv.status}}</td>
+							<td><button class="validate-button" (click)="handleClick(dv.status)">Délivrée</button></td>
 						    </tr>
 						  </tbody>
 						</table>

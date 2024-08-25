@@ -74,28 +74,28 @@
   
   <div *ngIf="showForm2">
     <div>
-      <input type="file" (change)="onFileSelected($event)" accept=".csv" />
+      <input type="file" (change)="onFileSelected($event)" accept=".xlsx" />
     </div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="table-wrap" *ngIf="csvData.length > 0">
-            <table class="table table-bordered table-dark table-hover">
-              <thead>
-                <tr>
-                  <th *ngFor="let header of csvHeaders">{{ header }}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr *ngFor="let row of csvData">
-                  <td *ngFor="let header of csvHeaders">{{ row[header] }}</td>
-                </tr>
-              </tbody>
-            </table>
-            <button (click)="uploadData()">Upload Data</button>
-          </div>
-				</div>
-			</div>
+  
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-wrap" *ngIf="fileData.length > 0">
+          <table class="table table-bordered table-dark table-hover">
+            <thead>
+              <tr>
+                <th *ngFor="let header of fileHeaders">{{ header }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of fileData">
+                <td *ngFor="let header of fileHeaders">{{ row[header] }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button (click)="addData()">Add Data</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
   

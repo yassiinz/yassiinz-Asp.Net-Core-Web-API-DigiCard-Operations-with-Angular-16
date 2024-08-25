@@ -1,4 +1,4 @@
-<br>
+
     <section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -18,20 +18,18 @@
                   <th>Nombre de carte</th>
                   <th>Status</th>
                   <th></th>
+				  <th></th>
 						    </tr>
 						  </thead>
-						  <tbody *ngFor="let cr of service.list">
-						    <tr *ngFor="let crr of servicee.list">
+						  <tbody *ngFor="let cr of service.list" >
+						    <tr *ngFor="let crr of servicee.list" (click)="populateForm(crr)">
                   <td>{{crr.id}}</td>
                   <td>{{cr.companyName}}</td>
                   <td>{{crr.comment}}</td>
                   <td>{{crr.numberOfCards}}</td>
                   <td>{{crr.status}}</td>
                   <td >
-                    <div class="section button-group">
-                    <button class="validate-button">VALIDER</button>
-                    <button class="reject-button" (click)="onDelete(crr.id)">REJETER</button>
-                    </div>
+                    <button class="validate-button" (click)="handleClick(crr.status)">Délivrée</button>
                   </td>
 						    </tr>
 						  </tbody>
